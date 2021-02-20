@@ -1,0 +1,14 @@
+# docker-compose.yaml
+
+version: '3'
+
+services:
+  stockfish_experiments:
+    container_name: stockfish_experiments
+    build: .
+    image: stockfish_experiments:latest
+    network_mode: host
+    volumes:
+      - ./stockfish_experiments:/app/stockfish_experiments
+    ports:
+      - 5000:5000
