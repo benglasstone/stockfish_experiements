@@ -1,0 +1,38 @@
+{
+  "name": "stockfish_experiments",
+  "version": "1.0.0",
+  "description": "Some tests for creating a chess gui for stockfish",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack --progress --config static/webpack.config.js",
+    "dev-build": "webpack --progress -d --config static/webpack.config.js",
+    "watch": "webpack --progress -d --config static/webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benglasstone/stockfish_experiments.git"
+  },
+  "author": "Ben Glasstone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benglasstone/stockfish_experiments/issues"
+  },
+  "homepage": "https://github.com/benglasstone/stockfish_experiments#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
